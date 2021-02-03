@@ -21,9 +21,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'install'
-    checkStyleRunAnalysis: 
-    codeCoverageClassFilesDirectories: 
-    codeCoverageClassFilter: 
+    
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
